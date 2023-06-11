@@ -1,0 +1,14 @@
+<div class="container" ng-if="myInfos.test">
+  <h1>Your name ist {{myInfos.lastname}} {{myInfos.firstname}}</h1>
+  <h1>Deine Email Adresse lautet: {{myInfos.email}}</h1>
+  <h1>Your Phone is: {{myInfos.phone}}</h1>
+  <h1>Your favourite dish is:{{myInfos.item.name}}</h1>
+  <br>
+   it's {{myInfos.item.description}}
+   <br>
+  <img src="../images/menu/{{myInfos.desk_short_name}}/{{myInfos.item.short_name}}.jpg" alt="">
+
+</div>
+<span ng-if="!myInfos.test">
+<h1>Not Signed Up Yet. <a ui-sref="public.signUp">Sign up Now!</a></h1>
+</span>
